@@ -1,6 +1,6 @@
----
-host: all
-gather_facts: false
-tasks:
-   - name: Simple Command
-     ansible.builtin.shell: echo "Hello World"
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
