@@ -1,0 +1,6 @@
+---
+host: all
+gather_facts: false
+tasks:
+   - name: Simple Command
+     ansible.builtin.shell: echo "Hello World"
